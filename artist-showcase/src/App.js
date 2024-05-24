@@ -4,6 +4,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Games from './components/Games';
 import Comics from './components/Comics';
 import Artwork from './components/Artwork';
+import './App.css'; // Import the CSS file
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
         <Route path="/games" element={<Games />} />
         <Route path="/comics" element={<Comics />} />
         <Route path="/artwork" element={<Artwork />} />
-        <Route path="/" element={<h1>Welcome to the Route 723</h1>} />
+        <Route path="/" element={<h1>Welcome to Route 723</h1>} />
       </Routes>
     </div>
   );

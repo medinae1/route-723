@@ -1,5 +1,20 @@
+/* File: src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+:root {
+  --main-color: #ADB8BA;
+  --secondary-color: #87B2B8;
+  --tertiary-color: #76A6CD;
+  --accent-color: #48699C;
+  --text-shadow-color: #B0C4DE; /* Light blue color */
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Kanit', sans-serif;
+  background-color: var(--main-color);
+  margin: 0;
+  padding: 0;
+
 }
 
 .App {
@@ -9,14 +24,46 @@ body {
 nav ul {
   list-style: none;
   padding: 0;
+  background-color: var(--accent-color);
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+
+h1 {
+  color: var(--accent-color);
+}
+
+h2 {
+  color: var(--tertiary-color);
+}
+
+p {
+  color: #333;
+}
+
+.section {
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+  background-color: #fff;
 }
