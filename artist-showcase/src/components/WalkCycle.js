@@ -16,7 +16,7 @@ const WalkCycle = () => {
 
     const updateAnimation = () => {
       const spriteRect = sprite.getBoundingClientRect();
-      const spriteWidth = spriteRect.width;
+      
 
       if (spriteRect.right >= navWidth) {
         direction = -1; // Reverse direction when hitting the right edge
