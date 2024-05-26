@@ -1,15 +1,16 @@
-// File: src/App.js
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import Games from './components/Games';
+import WalkCycle from './components/WalkCycle'; // Import the WalkCycle component
 import Comics from './components/Comics';
 import Artwork from './components/Artwork';
+import Games from './components/Games'
 import './App.css'; // Import the CSS file
 
 const App = () => {
   return (
     <div className="App">
       <nav>
+      <WalkCycle /> {/* Add WalkCycle component here */}
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/games">Games</Link></li>

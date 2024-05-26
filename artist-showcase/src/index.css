@@ -14,11 +14,17 @@ body {
   background-color: var(--main-color);
   margin: 0;
   padding: 0;
-
 }
 
 .App {
   text-align: center;
+}
+
+nav {
+  padding-top: 40px;
+  position: relative;
+  overflow: hidden; /* Prevent the image from overflowing */
+  margin: 0 auto; /* This centers the header horizontally */
 }
 
 nav ul {
@@ -47,7 +53,6 @@ nav ul li a:hover {
   color: #fff;
 }
 
-
 h1 {
   color: var(--accent-color);
 }
@@ -66,4 +71,17 @@ p {
   border: 2px solid var(--accent-color);
   border-radius: 10px;
   background-color: #fff;
+}
+
+.walk-cycle {
+  position: relative;/* Ensure proper positioning of the image */
+  width: 32px; /* Adjust the width of the image container */
+  height: 32px; /* Adjust the height of the image container */
+ 
+}
+
+.walk-cycle img {
+  position: absolute; /* Position the image absolutely */
+  top : 0;
+  left: 0; /* Align the image to the left */
 }
